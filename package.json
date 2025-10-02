@@ -1,0 +1,26 @@
+{
+  "name": "second_practice",
+  "version": "1.0.0",
+  "description": "second practice page",
+  "main": "index.html",
+  "scripts": {
+     "sass:watch": "sass --style=expanded --watch styles:dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dearfriendofyours/second_practice.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "YourFriend",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dearfriendofyours/second_practice/issues"
+  },
+  "homepage": "https://github.com/dearfriendofyours/second_practice#readme",
+  "devDependencies": {
+    "parcel": "^2.16.0",
+    "sass": "^1.93.2"
+  }
+}
