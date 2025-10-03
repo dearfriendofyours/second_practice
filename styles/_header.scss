@@ -1,0 +1,119 @@
+@use 'variables' as v;
+@use 'sass:color';
+@use 'placeholders';
+@use 'mixins' as mix;
+
+.header {
+    width: 100%;
+    height: 50px;
+    // создаёт эффект светлого блюра
+    background-color: color.adjust(v.$text-white-color, $alpha: -1);
+    white-space: nowrap;
+
+    border: {
+        bottom: {
+            width: 1px;
+            style: solid;
+            color: v.$text-white-color
+        }
+    }
+
+    .nav {
+        height: 50px;
+        @include mix.display-flex(start, center);
+        color: v.$text-white-color;
+
+        &__title {
+            height: 100%;
+            width: 255px;
+            border-right: 1px solid v.$text-white-color;
+            @include mix.display-flex(center, center);
+
+            &-link {
+                font-size: 25px;
+                font-weight: 500;
+
+                span {
+                    font-weight: 700;
+                }
+
+                @extend %hover;
+
+            }
+        }
+
+        &__links {
+            // разрешает динамическое увеличение размера элемента вполть до начала следующего
+            flex-grow: 1;
+
+            .list {
+                @include mix.display-flex(start, center, nowrap, row, min(100px, 5vw), 0);
+                padding: 0 0 0  min(100px, 5vw);
+                
+                &__item {
+    
+    
+                    &-link {
+                        font-size: 22px;
+                        font-weight: 400;
+                        
+    
+                    }
+
+                    @extend %hover;
+                }
+            }
+
+            @media (max-width: v.$media_lg) {
+               
+
+                .list {
+                    padding: 0;
+                    @include mix.display-flex(center, center, nowrap, row, min(100px, 5vw), 0);
+
+                    &__item {
+                        min-width: 90px;
+                        
+                    }
+                }
+
+            }
+
+
+        }
+
+        .covid {
+            height: 100%;
+            @include mix.display-flex(center, center);
+            padding: 0 30px;
+
+            border: {
+                left: 1px solid;
+                right: 1px solid;
+
+            }
+
+            &__link {
+                font-size: 16px;
+                font-weight: 700;
+                @extend %hover;
+            }
+
+            
+        }
+
+        .globe {
+            width: 90px;
+            @include mix.display-flex(center, center);
+
+            &__link  {
+                &-icon {
+                    width: 27px;
+                    height: 28px;
+                }
+
+                @extend %hover;
+            }
+        }
+    }
+}
