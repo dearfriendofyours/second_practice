@@ -1,13 +1,13 @@
 @use 'variables' as v;
-@use 'sass:color';
 @use 'placeholders';
 @use 'mixins' as mix;
+@use 'sass:color';
 
 .header {
     width: 100%;
     height: 50px;
     // создаёт эффект светлого блюра
-    background-color: color.adjust(v.$text-white-color, $alpha: -1);
+    background-color: color.adjust(v.$text-white-color, $alpha: -0.90);
     white-space: nowrap;
 
     border: {
