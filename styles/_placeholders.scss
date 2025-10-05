@@ -1,9 +1,16 @@
-@use 'variables';
+@use 'variables' as v;
 
 %hover {
     &:hover {
         cursor: pointer;
         scale: 1.05;
 
+    }
+}
+
+%hover-light {
+    &:hover {
+        cursor: pointer;
+        color:v.$text-white-color;
     }
 }
