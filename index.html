@@ -1,89 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="shortcut icon" href="/assets/favicon.png" type="image/png">
-    <link rel="stylesheet" href="/dist/index.css">
-    <title>practice_two</title>
-
-</head>
-<header class="header" aria-label="header">
-
-    <div class="container">
-        <!-- новый блок nav создаётся в рамках БЭМ, чтобы от него дальше строить названия элементов -->
-        <nav class="header__nav nav" aria-label="header navigation">
-            <div class="nav__title">
-                <a href="#" class="nav__title-link">CLOUD <span>FLEX</span></a>
-            </div>
-
-            <div class="nav__links">
-                <ul class="nav__links-list list" aria-label="header nav links">
-                    <li class="list__item" aria-label="first link">
-                        <a href="#" class="list__item-link">about us</a>
-                    </li>
-                    <li class="list__item" aria-label="second link">
-                        <a href="#" class="list__item-link">contacts</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="nav__covid-wrapper covid">
-                <a href="#" class="covid__link" aria-label="covid-19 update">COVID-19 UPDATE</a>
-            </div>
-
-            <div class="nav__globe-wrapper globe">
-                <a href="#" class="globe__link" aria-label="globe info">
-                    <svg class="globe__link-icon" aria-label="globe img">
-                        <use href="/assets/sprites.svg#globe-icon"></use>
-                    </svg>
-                </a>
-
-            </div>
-        </nav>
-
-    </div>
-</header>
-
-<main aria-label="main content">
-    <section class="hero-section" aria-label="hero section">
-        <div class="container">
-            <div class="hero">
-                <div class="hero__content">
-                    <h1 class="hero__title">WHEN PERFORMANCE MATTERS</h1>
-                    <button class="hero__action-btn">Start development with us!</button>
-
-                </div>
-
-                <div class="hero__notify">
-                    <img src="/assets/pigeon.png" alt="pigeon" class="hero__notify-img">
-                    <p class="hero__notify-content">
-                        WE USE COOKIES TO ENSURE YOUR BEST EXPERIENCE.
-                        THROUGH YOUR CONTINUED USE OF THIS SITE YOU ACCEPT THIS USE.
-                        FOR MORE INFORMATION, PLEASE SEE OUR PRIVACY POLICY.
-                    </p>
-
-                    <button class="hero__notify-btn">ACCEPT</button>
-                </div>
-
-                <div class="hero__scroll">
-                    <span class="hero__scroll-text">
-                        scroll down 
-                    </span>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-</main>
 
 <body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <link rel="shortcut icon" href="/assets/favicon.png" type="image/png">
+        <link rel="stylesheet" href="/dist/index.css">
+        <title>practice_two</title>
+
+    </head>
+    <header class="header" aria-label="header">
+
+        <div class="container">
+            <!-- новый блок nav создаётся в рамках БЭМ, чтобы от него дальше строить названия элементов -->
+            <nav class="header__nav nav" aria-label="header navigation">
+                <div class="nav__title">
+                    <a href="#" class="nav__title-link">CLOUD <span>FLEX</span></a>
+                </div>
+
+                <div class="nav__links">
+                    <ul class="nav__links-list list" aria-label="header nav links">
+                        <li class="list__item" aria-label="first link">
+                            <a href="#" class="list__item-link">about us</a>
+                        </li>
+                        <li class="list__item" aria-label="second link">
+                            <a href="#" class="list__item-link">contacts</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav__covid-wrapper covid">
+                    <a href="#" class="covid__link" aria-label="covid-19 update">COVID-19 UPDATE</a>
+                </div>
+
+                <div class="nav__globe-wrapper globe">
+                    <a href="#" class="globe__link" aria-label="globe info">
+                        <svg class="globe__link-icon" aria-label="globe img">
+                            <use href="/assets/sprites.svg#globe-icon"></use>
+                        </svg>
+                    </a>
+
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <main aria-label="main content">
+        <section class="hero-section" aria-label="hero section">
+            <div class="container">
+                <div class="hero">
+                    <div class="hero__content">
+                        <h1 class="hero__title">WHEN PERFORMANCE MATTERS</h1>
+                        <button class="hero__action-btn">Start development with us!</button>
+
+                    </div>
+
+                    <div class="hero__notify">
+                        <img src="/assets/pigeon.png" alt="pigeon" class="hero__notify-img">
+                        <p class="hero__notify-content">
+                            WE USE COOKIES TO ENSURE YOUR BEST EXPERIENCE.
+                            THROUGH YOUR CONTINUED USE OF THIS SITE YOU ACCEPT THIS USE.
+                            FOR MORE INFORMATION, PLEASE SEE OUR PRIVACY POLICY.
+                        </p>
+
+                        <button class="hero__notify-btn">ACCEPT</button>
+                    </div>
+
+                    <div class="hero__scroll">
+                        <span class="hero__scroll-text">
+                            scroll down
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="work-section">
+            <div class="container">
+                <div class="work">
+                    <h2 class="work__title">How we work</h2>
+                </div>
+
+                <div class="work__cards-wrapper">
+                    <figure class="info-card card--analysis" aria-label="card analysis">
+                        <svg class="info-card__icon icon--filler" aria-label="filler img">
+                            <use href="/assets/sprites.svg#filler-icon"></use>
+                        </svg>
+                        <h3 class="info-card__title">Analysis</h3>
+                        <p class="info-card__content">
+                            Gathering client's ideas we are happy to help with a technical vision.
+                        </p>
+                    </figure>
+                    <figure class="info-card card--design" aria-label="card design">
+                        <svg class="info-card__icon icon--filler" aria-label="filler img">
+                            <use href="/assets/sprites.svg#filler-icon"></use>
+                        </svg>
+                        <h3 class="info-card__title">Design</h3>
+                        <p class="info-card__content">
+                            In-depth analysis makes our solutions flexible, scalable and robust.
+                        </p>
+                    </figure>
+                    <figure class="info-card card--development" aria-label="card development">
+                        <svg class="info-card__icon icon--filler" aria-label="filler  img">
+                            <use href="/assets/sprites.svg#filler-icon"></use>
+                        </svg>
+                        <h3 class="info-card__title">Development</h3>
+                        <p class="info-card__content">
+                            Using best practices to make reliable, well-documented and easy to maintain system.
+                        </p>
+                    </figure>
+                    <figure class="info-card card--maintance" aria-label="card maintance">
+                        <svg class="info-card__icon icon--filler" aria-label="filler  img">
+                            <use href="/assets/sprites.svg#filler-icon"></use>
+                        </svg>
+                        <h3 class="info-card__title">Maintence</h3>
+                        <p class="info-card__content">
+                            Gathering client's ideas we are happy to help with a technical vision.
+                        </p>
+                    </figure>
+                    <figure class="info-card card--testing" aria-label="card testing">
+                        <svg class="info-card__icon icon--filler" aria-label="filler  img">
+                            <use href="/assets/sprites.svg#filler-icon"></use>
+                        </svg>
+                        <h3 class="info-card__title">Testing</h3>
+                        <p class="info-card__content">
+                            Providing best quality of things developed by us for customers.
+                        </p>
+                    </figure>
+                    <figure class="info-card card--integration" aria-label="card integration">
+                        <svg class="info-card__icon icon--filler" aria-label="filler  img">
+                            <use href="/assets/sprites.svg#filler-icon"></use>
+                        </svg>
+                        <h3 class="info-card__title">Integration</h3>
+                        <p class="info-card__content">
+                            Solutions that go with
+                            the times to improve businesses and give customers best experience
+                        </p>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
 
 </body>
